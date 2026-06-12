@@ -1,7 +1,7 @@
 # Alpha Rentals — Car Rental Management System (Project Context)
 
-> Paste this whole file into Claude to get help (e.g., pushing to GitHub, writing a
-> README, deploying, adding features). It fully describes the project.
+> A complete reference for this project — its architecture, tech stack, and
+> features (pushing to GitHub, deploying, adding features). It fully describes the project.
 
 ## 1. Summary
 Alpha Rentals is a full-stack self-drive car rental web application for the Indian market.
