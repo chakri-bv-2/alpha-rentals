@@ -8,6 +8,12 @@ The repo is already set up for it (`render.yaml`, `backend/Dockerfile`, a `prod`
 database profile). You just click through the Render dashboard once.
 
 > ⏱️ First deploy takes ~10–15 min (mostly the backend Docker build).
+>
+> ⚠️ **Render appends a random suffix to service names** (e.g.
+> `driveeasy-backend-w8l7`). Always use *your* real service URLs from the
+> dashboard — the URLs in this guide are only examples. The frontend's
+> `VITE_API_URL` is compiled in at build time, so after changing it you must
+> **Manual Deploy → Deploy latest commit** for it to take effect.
 
 ---
 
@@ -23,6 +29,7 @@ database profile). You just click through the Render dashboard once.
 3. Render reads `render.yaml` and shows 3 resources to create:
    - `driveeasy-db` (PostgreSQL)
    - `driveeasy-backend` (web service)
+
    - `driveeasy-frontend` (static site)
 4. Click **Apply**. Render starts building. The database and backend come up first;
    the frontend may fail its first build — that's expected, we fix it in Step 4.
